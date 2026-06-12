@@ -1,0 +1,85 @@
+<header class="sticky top-0 z-50 border-b border-border-inverse bg-surface-page shadow-header" data-header data-scroll-header>
+  <nav class="relative bg-surface-page px-md py-sm lg:px-5xl lg:py-md" aria-label="Основная навигация">
+    <div class="mx-auto flex w-full max-w-screen-xl items-center justify-between gap-lg">
+      <a
+        class="group inline-flex items-center gap-xs rounded-md text-text-primary transition-colors duration-200 ease-out hover:text-text-brand focus:outline-none focus-visible:shadow-focus active:text-text-link-hover lg:gap-sm"
+        href="index.html"
+        aria-label="Shipline, на главную"
+      >
+        <img
+          class="h-lg w-lg transition-transform duration-200 ease-out group-hover:scale-105 lg:h-2xl lg:w-2xl"
+          src="images/logo.svg"
+          width="32"
+          height="32"
+          alt=""
+          decoding="async"
+        >
+        <span class="font-sans text-h6 lg:text-h5">Shipline</span>
+      </a>
+
+      <div class="absolute left-1/2 hidden -translate-x-1/2 items-center justify-center gap-3xl lg:flex">
+        <a class="rounded-sm text-nav text-text-secondary transition-colors duration-200 ease-out hover:text-text-primary focus:outline-none focus-visible:shadow-focus active:text-text-brand" data-nav-link href="index.html#features">
+          Функции
+        </a>
+        <a class="rounded-sm text-nav text-text-secondary transition-colors duration-200 ease-out hover:text-text-primary focus:outline-none focus-visible:shadow-focus active:text-text-brand" data-nav-link href="index.html#how-it-works">
+          Процесс
+        </a>
+        <a class="rounded-sm text-nav text-text-secondary transition-colors duration-200 ease-out hover:text-text-primary focus:outline-none focus-visible:shadow-focus active:text-text-brand" data-nav-link href="index.html#audience">
+          Роли
+        </a>
+        <a class="rounded-sm text-nav text-text-secondary transition-colors duration-200 ease-out hover:text-text-primary focus:outline-none focus-visible:shadow-focus active:text-text-brand" data-nav-link href="index.html#pricing">
+          Цены
+        </a>
+        <a class="rounded-sm text-nav text-text-secondary transition-colors duration-200 ease-out hover:text-text-primary focus:outline-none focus-visible:shadow-focus active:text-text-brand" data-nav-link href="index.html#faq">
+          FAQ
+        </a>
+      </div>
+
+      <div class="hidden justify-end lg:flex">
+        <button class="btn btn--primary" type="button" data-demo-trigger><span>Запросить демо</span></button>
+      </div>
+
+      <button
+        class="header-burger inline-flex flex-col items-center justify-center gap-2xs text-text-brand hover:bg-surface-brand-soft focus:outline-none focus-visible:shadow-focus active:bg-violet-alpha-12 aria-expanded:bg-surface-brand-soft lg:hidden"
+        type="button"
+        aria-label="Открыть меню"
+        aria-controls="header-mobile-menu"
+        aria-expanded="false"
+        data-header-toggle
+      >
+        <span class="header-burger__line" aria-hidden="true"></span>
+        <span class="header-burger__line" aria-hidden="true"></span>
+        <span class="header-burger__line" aria-hidden="true"></span>
+      </button>
+    </div>
+  </nav>
+
+  <div
+    class="header-mobile-menu border-t border-border-inverse bg-surface-panel px-xl py-2xl shadow-card lg:hidden"
+    id="header-mobile-menu"
+    hidden
+    data-header-menu
+    data-state="closed"
+  >
+    <nav class="header-mobile-menu__nav flex flex-col items-center justify-center gap-xl text-center" aria-label="Мобильная навигация">
+      <a class="rounded-md px-md py-xs text-mobile-h5 text-text-secondary transition-colors duration-200 ease-out hover:text-text-primary focus:outline-none focus-visible:shadow-focus active:text-text-brand" data-nav-link href="index.html#features" data-header-link>
+        Функции
+      </a>
+      <a class="rounded-md px-md py-xs text-mobile-h5 text-text-secondary transition-colors duration-200 ease-out hover:text-text-primary focus:outline-none focus-visible:shadow-focus active:text-text-brand" data-nav-link href="index.html#how-it-works" data-header-link>
+        Процесс
+      </a>
+      <a class="rounded-md px-md py-xs text-mobile-h5 text-text-secondary transition-colors duration-200 ease-out hover:text-text-primary focus:outline-none focus-visible:shadow-focus active:text-text-brand" data-nav-link href="index.html#audience" data-header-link>
+        Роли
+      </a>
+      <a class="rounded-md px-md py-xs text-mobile-h5 text-text-secondary transition-colors duration-200 ease-out hover:text-text-primary focus:outline-none focus-visible:shadow-focus active:text-text-brand" data-nav-link href="index.html#pricing" data-header-link>
+        Цены
+      </a>
+      <a class="rounded-md px-md py-xs text-mobile-h5 text-text-secondary transition-colors duration-200 ease-out hover:text-text-primary focus:outline-none focus-visible:shadow-focus active:text-text-brand" data-nav-link href="index.html#faq" data-header-link>
+        FAQ
+      </a>
+      <div class="pt-md">
+        <button class="btn btn--primary" type="button" data-demo-trigger data-header-link><span>Запросить демо</span></button>
+      </div>
+    </nav>
+  </div>
+</header>

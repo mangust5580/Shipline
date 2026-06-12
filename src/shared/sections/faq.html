@@ -1,0 +1,159 @@
+<section id="faq" class="bg-surface-page px-xl py-5xl lg:px-5xl xl:py-7xl" aria-labelledby="faq-title" data-faq-accordion>
+  <div class="mx-auto flex w-full max-w-screen-xl flex-col items-center gap-2xl">
+
+    <h2 id="faq-title" class="font-sans text-mobile-h3 text-text-primary sm:text-mobile-h2 lg:text-h4">
+      Частые вопросы
+    </h2>
+
+    <div class="grid w-full gap-2xl lg:grid-cols-2">
+
+      <div class="relative hidden min-w-0 lg:block" aria-hidden="true">
+        <picture class="block w-full">
+          <source srcset="images/faq/faq-illustration.avif 1x, images/faq/faq-illustration@2x.avif 2x" type="image/avif">
+          <source srcset="images/faq/faq-illustration.webp 1x, images/faq/faq-illustration@2x.webp 2x" type="image/webp">
+          <img
+            class="block w-full rounded-xl border border-border-inverse shadow-card"
+            src="images/faq/faq-illustration.png"
+            srcset="images/faq/faq-illustration.png 1x, images/faq/faq-illustration@2x.png 2x"
+            sizes="(min-width: 1024px) 45vw, 100vw"
+            width="640"
+            height="400"
+            alt=""
+            loading="lazy"
+            decoding="async"
+          >
+        </picture>
+      </div>
+
+      <dl class="min-w-0 w-full border-y border-border-inverse divide-y divide-border-inverse">
+
+        <div data-faq-item>
+          <dt>
+            <button
+              type="button"
+              class="flex w-full cursor-pointer items-center justify-between gap-md py-lg text-left focus:outline-none focus-visible:shadow-focus"
+              id="faq-trigger-1"
+              aria-expanded="false"
+              aria-controls="faq-panel-1"
+              data-faq-trigger
+            >
+              <span class="font-sans text-mobile-body text-text-primary">Что такое Shipline?</span>
+              <svg class="faq-chevron h-lg w-lg shrink-0 text-text-muted" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><use href="icons/sprite.svg#icon-chevron"></use></svg>
+            </button>
+          </dt>
+          <dd id="faq-panel-1" aria-labelledby="faq-trigger-1" data-faq-panel hidden>
+            <p class="pb-lg text-mobile-small text-text-secondary lg:text-small">
+              Shipline — платформа для аналитики релизов и изменений. Она объединяет данные из репозиториев, CI/CD, инцидентов и рабочих инструментов, чтобы команда видела полную картину релизного процесса.
+            </p>
+          </dd>
+        </div>
+
+        <div data-faq-item>
+          <dt>
+            <button
+              type="button"
+              class="flex w-full cursor-pointer items-center justify-between gap-md py-lg text-left focus:outline-none focus-visible:shadow-focus"
+              id="faq-trigger-2"
+              aria-expanded="false"
+              aria-controls="faq-panel-2"
+              data-faq-trigger
+            >
+              <span class="font-sans text-mobile-body text-text-primary">Какие метрики отслеживаются?</span>
+              <svg class="faq-chevron h-lg w-lg shrink-0 text-text-muted" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><use href="icons/sprite.svg#icon-chevron"></use></svg>
+            </button>
+          </dt>
+          <dd id="faq-panel-2" aria-labelledby="faq-trigger-2" data-faq-panel hidden>
+            <p class="pb-lg text-mobile-small text-text-secondary lg:text-small">
+              Платформа помогает отслеживать частоту релизов, lead time, MTTR, долю успешных релизов, влияние изменений и другие показатели, связанные со стабильностью доставки.
+            </p>
+          </dd>
+        </div>
+
+        <div data-faq-item>
+          <dt>
+            <button
+              type="button"
+              class="flex w-full cursor-pointer items-center justify-between gap-md py-lg text-left focus:outline-none focus-visible:shadow-focus"
+              id="faq-trigger-3"
+              aria-expanded="false"
+              aria-controls="faq-panel-3"
+              data-faq-trigger
+            >
+              <span class="font-sans text-mobile-body text-text-primary">Какие источники можно подключить?</span>
+              <svg class="faq-chevron h-lg w-lg shrink-0 text-text-muted" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><use href="icons/sprite.svg#icon-chevron"></use></svg>
+            </button>
+          </dt>
+          <dd id="faq-panel-3" aria-labelledby="faq-trigger-3" data-faq-panel hidden>
+            <p class="pb-lg text-mobile-small text-text-secondary lg:text-small">
+              Можно подключать репозитории, CI/CD-пайплайны, системы мониторинга, трекеры задач и другие инструменты, которые участвуют в релизном процессе.
+            </p>
+          </dd>
+        </div>
+
+        <div data-faq-item>
+          <dt>
+            <button
+              type="button"
+              class="flex w-full cursor-pointer items-center justify-between gap-md py-lg text-left focus:outline-none focus-visible:shadow-focus"
+              id="faq-trigger-4"
+              aria-expanded="false"
+              aria-controls="faq-panel-4"
+              data-faq-trigger
+            >
+              <span class="font-sans text-mobile-body text-text-primary">Подойдёт ли Shipline небольшой команде?</span>
+              <svg class="faq-chevron h-lg w-lg shrink-0 text-text-muted" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><use href="icons/sprite.svg#icon-chevron"></use></svg>
+            </button>
+          </dt>
+          <dd id="faq-panel-4" aria-labelledby="faq-trigger-4" data-faq-panel hidden>
+            <p class="pb-lg text-mobile-small text-text-secondary lg:text-small">
+              Да. Start-план рассчитан на небольшие команды, которым нужен базовый обзор релизов, интеграций и ключевых изменений без сложного внедрения.
+            </p>
+          </dd>
+        </div>
+
+        <div data-faq-item>
+          <dt>
+            <button
+              type="button"
+              class="flex w-full cursor-pointer items-center justify-between gap-md py-lg text-left focus:outline-none focus-visible:shadow-focus"
+              id="faq-trigger-5"
+              aria-expanded="false"
+              aria-controls="faq-panel-5"
+              data-faq-trigger
+            >
+              <span class="font-sans text-mobile-body text-text-primary">Нужно ли менять текущий CI/CD?</span>
+              <svg class="faq-chevron h-lg w-lg shrink-0 text-text-muted" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><use href="icons/sprite.svg#icon-chevron"></use></svg>
+            </button>
+          </dt>
+          <dd id="faq-panel-5" aria-labelledby="faq-trigger-5" data-faq-panel hidden>
+            <p class="pb-lg text-mobile-small text-text-secondary lg:text-small">
+              Нет. Shipline подключается поверх существующих процессов и помогает анализировать данные без обязательной замены текущих пайплайнов.
+            </p>
+          </dd>
+        </div>
+
+        <div data-faq-item>
+          <dt>
+            <button
+              type="button"
+              class="flex w-full cursor-pointer items-center justify-between gap-md py-lg text-left focus:outline-none focus-visible:shadow-focus"
+              id="faq-trigger-6"
+              aria-expanded="false"
+              aria-controls="faq-panel-6"
+              data-faq-trigger
+            >
+              <span class="font-sans text-mobile-body text-text-primary">Как запросить демо?</span>
+              <svg class="faq-chevron h-lg w-lg shrink-0 text-text-muted" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><use href="icons/sprite.svg#icon-chevron"></use></svg>
+            </button>
+          </dt>
+          <dd id="faq-panel-6" aria-labelledby="faq-trigger-6" data-faq-panel hidden>
+            <p class="pb-lg text-mobile-small text-text-secondary lg:text-small">
+              Нажмите «Запросить демо» и оставьте контактные данные. Мы покажем, как Shipline может работать с вашими источниками, метриками и процессом релизов.
+            </p>
+          </dd>
+        </div>
+
+      </dl>
+    </div>
+  </div>
+</section>

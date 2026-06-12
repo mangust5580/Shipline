@@ -1,0 +1,247 @@
+<section id="pricing" class="bg-surface-page px-xl py-5xl lg:px-5xl xl:py-7xl" aria-labelledby="pricing-title">
+  <div class="mx-auto flex w-full max-w-screen-xl flex-col items-center gap-2xl">
+
+    <h2 id="pricing-title" class="font-sans text-mobile-h3 text-text-primary sm:text-mobile-h2 lg:text-h4">
+      Тарифы
+    </h2>
+
+    <div class="flex w-full min-w-0 flex-col items-center gap-2xl" data-pricing-tabs>
+
+      <div
+        class="grid w-full max-w-screen-sm grid-cols-2 rounded-full border border-border-inverse bg-surface-elevated p-2xs"
+        role="tablist"
+        aria-label="Период оплаты"
+      >
+        <button
+          class="min-w-0 cursor-pointer rounded-full px-sm py-xs text-center font-sans text-mobile-small text-text-secondary transition-colors duration-200 ease-out aria-selected:bg-surface-brand aria-selected:text-text-on-brand focus:outline-none focus-visible:shadow-focus sm:px-xl sm:text-small"
+          type="button"
+          role="tab"
+          id="pricing-tab-monthly"
+          aria-selected="true"
+          aria-controls="pricing-monthly"
+          data-pricing-tab="monthly"
+          tabindex="0"
+        >Месяц</button>
+        <button
+          class="min-w-0 cursor-pointer rounded-full px-sm py-xs text-center font-sans text-mobile-small text-text-secondary transition-colors duration-200 ease-out aria-selected:bg-surface-brand aria-selected:text-text-on-brand focus:outline-none focus-visible:shadow-focus sm:px-xl sm:text-small"
+          type="button"
+          role="tab"
+          id="pricing-tab-yearly"
+          aria-selected="false"
+          aria-controls="pricing-yearly"
+          data-pricing-tab="yearly"
+          tabindex="-1"
+        >Год (-20%)</button>
+      </div>
+
+      <div
+        id="pricing-monthly"
+        role="tabpanel"
+        aria-labelledby="pricing-tab-monthly"
+        data-pricing-panel="monthly"
+        tabindex="0"
+        class="w-full min-w-0"
+      >
+        <ul class="grid w-full min-w-0 gap-lg lg:grid-cols-3" aria-label="Тарифы — Месячно">
+
+          <li class="flex w-full min-w-0 flex-col rounded-lg border border-border-inverse bg-surface-panel p-xl shadow-card">
+            <h3 class="font-sans text-mobile-h5 text-text-primary lg:text-h5">Start</h3>
+            <p class="mt-2xs text-mobile-small text-text-secondary lg:text-small">Для небольших команд</p>
+            <div class="mt-lg flex min-w-0 flex-wrap items-baseline gap-xs">
+              <span class="font-sans text-mobile-display text-text-primary">0 ₽</span>
+              <span class="min-w-0 text-mobile-small text-text-muted">/ месяц</span>
+            </div>
+            <ul class="mt-xl flex flex-col gap-md" aria-label="Возможности тарифа Start">
+              <li class="flex items-start gap-xs">
+                <svg class="mt-3xs h-lg w-lg shrink-0 text-text-success" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><use href="icons/sprite.svg#icon-check"></use></svg>
+                <span class="text-mobile-small text-text-secondary lg:text-small">До 5 пользователей</span>
+              </li>
+              <li class="flex items-start gap-xs">
+                <svg class="mt-3xs h-lg w-lg shrink-0 text-text-success" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><use href="icons/sprite.svg#icon-check"></use></svg>
+                <span class="text-mobile-small text-text-secondary lg:text-small">До 3 проектов</span>
+              </li>
+              <li class="flex items-start gap-xs">
+                <svg class="mt-3xs h-lg w-lg shrink-0 text-text-success" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><use href="icons/sprite.svg#icon-check"></use></svg>
+                <span class="text-mobile-small text-text-secondary lg:text-small">Базовые интеграции</span>
+              </li>
+              <li class="flex items-start gap-xs">
+                <svg class="mt-3xs h-lg w-lg shrink-0 text-text-success" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><use href="icons/sprite.svg#icon-check"></use></svg>
+                <span class="text-mobile-small text-text-secondary lg:text-small">Поддержка сообщества</span>
+              </li>
+            </ul>
+            <div class="mt-auto pt-xl">
+              <a class="btn btn--outline w-full cursor-pointer" href="#contact">Начать бесплатно</a>
+            </div>
+          </li>
+
+          <li class="flex w-full min-w-0 flex-col rounded-lg border border-border-brand bg-surface-panel p-xl shadow-card">
+            <h3 class="font-sans text-mobile-h5 text-text-primary lg:text-h5">Team</h3>
+            <p class="mt-2xs text-mobile-small text-text-secondary lg:text-small">Для растущих команд</p>
+            <div class="mt-lg flex min-w-0 flex-wrap items-baseline gap-xs">
+              <span class="font-sans text-mobile-display text-text-primary">4 900 ₽</span>
+              <span class="min-w-0 text-mobile-small text-text-muted">/ месяц / команда</span>
+            </div>
+            <ul class="mt-xl flex flex-col gap-md" aria-label="Возможности тарифа Team">
+              <li class="flex items-start gap-xs">
+                <svg class="mt-3xs h-lg w-lg shrink-0 text-text-success" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><use href="icons/sprite.svg#icon-check"></use></svg>
+                <span class="text-mobile-small text-text-secondary lg:text-small">Безлимитные пользователи</span>
+              </li>
+              <li class="flex items-start gap-xs">
+                <svg class="mt-3xs h-lg w-lg shrink-0 text-text-success" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><use href="icons/sprite.svg#icon-check"></use></svg>
+                <span class="text-mobile-small text-text-secondary lg:text-small">Все интеграции</span>
+              </li>
+              <li class="flex items-start gap-xs">
+                <svg class="mt-3xs h-lg w-lg shrink-0 text-text-success" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><use href="icons/sprite.svg#icon-check"></use></svg>
+                <span class="text-mobile-small text-text-secondary lg:text-small">Расширенная аналитика</span>
+              </li>
+              <li class="flex items-start gap-xs">
+                <svg class="mt-3xs h-lg w-lg shrink-0 text-text-success" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><use href="icons/sprite.svg#icon-check"></use></svg>
+                <span class="text-mobile-small text-text-secondary lg:text-small">Приоритетная поддержка</span>
+              </li>
+            </ul>
+            <div class="mt-auto pt-xl">
+              <button class="btn btn--primary w-full" type="button" data-demo-trigger>Запросить демо</button>
+            </div>
+          </li>
+
+          <li class="flex w-full min-w-0 flex-col rounded-lg border border-border-inverse bg-surface-panel p-xl shadow-card">
+            <h3 class="font-sans text-mobile-h5 text-text-primary lg:text-h5">Scale</h3>
+            <p class="mt-2xs text-mobile-small text-text-secondary lg:text-small">Для крупных организаций</p>
+            <div class="mt-lg min-w-0">
+              <span class="block min-w-0 font-sans text-mobile-h3 text-text-primary sm:text-mobile-h2 lg:text-mobile-h2">Индивидуально</span>
+            </div>
+            <ul class="mt-xl flex flex-col gap-md" aria-label="Возможности тарифа Scale">
+              <li class="flex items-start gap-xs">
+                <svg class="mt-3xs h-lg w-lg shrink-0 text-text-success" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><use href="icons/sprite.svg#icon-check"></use></svg>
+                <span class="text-mobile-small text-text-secondary lg:text-small">Выделенный инстанс</span>
+              </li>
+              <li class="flex items-start gap-xs">
+                <svg class="mt-3xs h-lg w-lg shrink-0 text-text-success" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><use href="icons/sprite.svg#icon-check"></use></svg>
+                <span class="text-mobile-small text-text-secondary lg:text-small">SLA и безопасность</span>
+              </li>
+              <li class="flex items-start gap-xs">
+                <svg class="mt-3xs h-lg w-lg shrink-0 text-text-success" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><use href="icons/sprite.svg#icon-check"></use></svg>
+                <span class="text-mobile-small text-text-secondary lg:text-small">Индивидуальные интеграции</span>
+              </li>
+              <li class="flex items-start gap-xs">
+                <svg class="mt-3xs h-lg w-lg shrink-0 text-text-success" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><use href="icons/sprite.svg#icon-check"></use></svg>
+                <span class="text-mobile-small text-text-secondary lg:text-small">Персональный менеджер</span>
+              </li>
+            </ul>
+            <div class="mt-auto pt-xl">
+              <a class="btn btn--outline w-full cursor-pointer" href="#contact">Связаться с нами</a>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+      <div
+        id="pricing-yearly"
+        role="tabpanel"
+        aria-labelledby="pricing-tab-yearly"
+        data-pricing-panel="yearly"
+        tabindex="0"
+        hidden
+        class="w-full min-w-0"
+      >
+        <ul class="grid w-full min-w-0 gap-lg lg:grid-cols-3" aria-label="Тарифы — Годовой">
+
+          <li class="flex w-full min-w-0 flex-col rounded-lg border border-border-inverse bg-surface-panel p-xl shadow-card">
+            <h3 class="font-sans text-mobile-h5 text-text-primary lg:text-h5">Start</h3>
+            <p class="mt-2xs text-mobile-small text-text-secondary lg:text-small">Для небольших команд</p>
+            <div class="mt-lg flex min-w-0 flex-wrap items-baseline gap-xs">
+              <span class="font-sans text-mobile-display text-text-primary">0 ₽</span>
+              <span class="min-w-0 text-mobile-small text-text-muted">/ месяц</span>
+            </div>
+            <ul class="mt-xl flex flex-col gap-md" aria-label="Возможности тарифа Start">
+              <li class="flex items-start gap-xs">
+                <svg class="mt-3xs h-lg w-lg shrink-0 text-text-success" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><use href="icons/sprite.svg#icon-check"></use></svg>
+                <span class="text-mobile-small text-text-secondary lg:text-small">До 5 пользователей</span>
+              </li>
+              <li class="flex items-start gap-xs">
+                <svg class="mt-3xs h-lg w-lg shrink-0 text-text-success" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><use href="icons/sprite.svg#icon-check"></use></svg>
+                <span class="text-mobile-small text-text-secondary lg:text-small">До 3 проектов</span>
+              </li>
+              <li class="flex items-start gap-xs">
+                <svg class="mt-3xs h-lg w-lg shrink-0 text-text-success" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><use href="icons/sprite.svg#icon-check"></use></svg>
+                <span class="text-mobile-small text-text-secondary lg:text-small">Базовые интеграции</span>
+              </li>
+              <li class="flex items-start gap-xs">
+                <svg class="mt-3xs h-lg w-lg shrink-0 text-text-success" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><use href="icons/sprite.svg#icon-check"></use></svg>
+                <span class="text-mobile-small text-text-secondary lg:text-small">Поддержка сообщества</span>
+              </li>
+            </ul>
+            <div class="mt-auto pt-xl">
+              <a class="btn btn--outline w-full cursor-pointer" href="#contact">Начать бесплатно</a>
+            </div>
+          </li>
+
+          <li class="flex w-full min-w-0 flex-col rounded-lg border border-border-brand bg-surface-panel p-xl shadow-card">
+            <h3 class="font-sans text-mobile-h5 text-text-primary lg:text-h5">Team</h3>
+            <p class="mt-2xs text-mobile-small text-text-secondary lg:text-small">Для растущих команд</p>
+            <div class="mt-lg flex flex-col gap-2xs">
+              <div class="flex min-w-0 flex-wrap items-baseline gap-xs">
+                <span class="font-sans text-mobile-display text-text-primary">3 900 ₽</span>
+                <span class="min-w-0 text-mobile-small text-text-muted">/ месяц / команда</span>
+              </div>
+              <p class="text-caption text-text-muted">при оплате за год</p>
+            </div>
+            <ul class="mt-xl flex flex-col gap-md" aria-label="Возможности тарифа Team">
+              <li class="flex items-start gap-xs">
+                <svg class="mt-3xs h-lg w-lg shrink-0 text-text-success" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><use href="icons/sprite.svg#icon-check"></use></svg>
+                <span class="text-mobile-small text-text-secondary lg:text-small">Безлимитные пользователи</span>
+              </li>
+              <li class="flex items-start gap-xs">
+                <svg class="mt-3xs h-lg w-lg shrink-0 text-text-success" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><use href="icons/sprite.svg#icon-check"></use></svg>
+                <span class="text-mobile-small text-text-secondary lg:text-small">Все интеграции</span>
+              </li>
+              <li class="flex items-start gap-xs">
+                <svg class="mt-3xs h-lg w-lg shrink-0 text-text-success" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><use href="icons/sprite.svg#icon-check"></use></svg>
+                <span class="text-mobile-small text-text-secondary lg:text-small">Расширенная аналитика</span>
+              </li>
+              <li class="flex items-start gap-xs">
+                <svg class="mt-3xs h-lg w-lg shrink-0 text-text-success" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><use href="icons/sprite.svg#icon-check"></use></svg>
+                <span class="text-mobile-small text-text-secondary lg:text-small">Приоритетная поддержка</span>
+              </li>
+            </ul>
+            <div class="mt-auto pt-xl">
+              <button class="btn btn--primary w-full" type="button" data-demo-trigger>Запросить демо</button>
+            </div>
+          </li>
+
+          <li class="flex w-full min-w-0 flex-col rounded-lg border border-border-inverse bg-surface-panel p-xl shadow-card">
+            <h3 class="font-sans text-mobile-h5 text-text-primary lg:text-h5">Scale</h3>
+            <p class="mt-2xs text-mobile-small text-text-secondary lg:text-small">Для крупных организаций</p>
+            <div class="mt-lg min-w-0">
+              <span class="block min-w-0 font-sans text-mobile-h3 text-text-primary sm:text-mobile-h2 lg:text-mobile-h2">Индивидуально</span>
+            </div>
+            <ul class="mt-xl flex flex-col gap-md" aria-label="Возможности тарифа Scale">
+              <li class="flex items-start gap-xs">
+                <svg class="mt-3xs h-lg w-lg shrink-0 text-text-success" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><use href="icons/sprite.svg#icon-check"></use></svg>
+                <span class="text-mobile-small text-text-secondary lg:text-small">Выделенный инстанс</span>
+              </li>
+              <li class="flex items-start gap-xs">
+                <svg class="mt-3xs h-lg w-lg shrink-0 text-text-success" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><use href="icons/sprite.svg#icon-check"></use></svg>
+                <span class="text-mobile-small text-text-secondary lg:text-small">SLA и безопасность</span>
+              </li>
+              <li class="flex items-start gap-xs">
+                <svg class="mt-3xs h-lg w-lg shrink-0 text-text-success" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><use href="icons/sprite.svg#icon-check"></use></svg>
+                <span class="text-mobile-small text-text-secondary lg:text-small">Индивидуальные интеграции</span>
+              </li>
+              <li class="flex items-start gap-xs">
+                <svg class="mt-3xs h-lg w-lg shrink-0 text-text-success" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><use href="icons/sprite.svg#icon-check"></use></svg>
+                <span class="text-mobile-small text-text-secondary lg:text-small">Персональный менеджер</span>
+              </li>
+            </ul>
+            <div class="mt-auto pt-xl">
+              <a class="btn btn--outline w-full cursor-pointer" href="#contact">Связаться с нами</a>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>

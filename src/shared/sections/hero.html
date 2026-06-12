@@ -1,0 +1,73 @@
+<section class="hero-screen relative flex flex-col justify-center overflow-hidden bg-surface-page px-xl py-4xl lg:px-5xl xl:py-5xl" aria-labelledby="hero-title">
+  <div class="hero-ambient" aria-hidden="true"></div>
+
+  <div class="relative mx-auto grid w-full max-w-screen-xl items-start gap-2xl lg:grid-cols-12 xl:gap-3xl">
+
+    <div class="flex min-w-0 flex-col items-start gap-lg lg:col-span-6 lg:max-w-none xl:col-span-5">
+
+      <include src="shared/components/badges/badge-brand-analytics.html"></include>
+
+      <div class="flex w-full flex-col gap-md">
+        <h1 id="hero-title" class="max-w-screen-md font-sans text-mobile-h2 text-text-primary sm:text-mobile-h1 2xl:text-h2">
+          <span class="block">Выпускайте релизы</span>
+          <span class="block">быстрее.</span>
+          <span class="block text-text-brand">Без хаоса и догадок.</span>
+        </h1>
+        <p class="max-w-screen-md text-mobile-body-lg text-text-secondary lg:text-body-lg">
+          Shipline объединяет изменения, метрики и события из всех ваших инструментов в единой панели —
+          чтобы вы видели полную картину релизного процесса и принимали решения на основе данных, а не догадок.
+        </p>
+      </div>
+
+      <div class="flex flex-col gap-sm sm:flex-row sm:items-center">
+        <include src="shared/components/buttons/button-primary.html"></include>
+        <include src="shared/components/buttons/button-outline-features.html"></include>
+      </div>
+
+      <ul
+        class="flex flex-col gap-sm sm:flex-row sm:flex-wrap sm:gap-lg"
+        aria-label="Преимущества Shipline"
+      >
+        <li class="flex items-center gap-xs text-small text-text-secondary">
+          <svg class="h-lg w-lg shrink-0 text-text-brand" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+            <use href="icons/sprite.svg#icon-shield-check"></use>
+          </svg>
+          <span>Меньше инцидентов</span>
+        </li>
+        <li class="flex items-center gap-xs text-small text-text-secondary">
+          <svg class="h-lg w-lg shrink-0 text-text-brand" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+            <use href="icons/sprite.svg#icon-fast-forward"></use>
+          </svg>
+          <span>Быстрый выпуск релизов</span>
+        </li>
+        <li class="flex items-center gap-xs text-small text-text-secondary">
+          <svg class="h-lg w-lg shrink-0 text-text-brand" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+            <use href="icons/sprite.svg#icon-file-text"></use>
+          </svg>
+          <span>Прозрачный релизный процесс</span>
+        </li>
+      </ul>
+
+    </div>
+
+    <div class="relative min-w-0 w-full md:mx-auto md:w-4/5 md:max-w-screen-md lg:col-span-6 lg:mx-0 lg:w-full lg:max-w-none xl:col-span-7 xl:justify-self-end">
+      <div class="hero-visual-glow" aria-hidden="true"></div>
+      <picture class="relative block">
+        <source srcset="images/hero/hero-dashboard.avif 1x, images/hero/hero-dashboard@2x.avif 2x" type="image/avif">
+        <source srcset="images/hero/hero-dashboard.webp 1x, images/hero/hero-dashboard@2x.webp 2x" type="image/webp">
+        <img
+          class="relative block w-full rounded-2xl border border-border-inverse shadow-lg"
+          src="images/hero/hero-dashboard.png"
+          srcset="images/hero/hero-dashboard.png 1x, images/hero/hero-dashboard@2x.png 2x"
+          sizes="(min-width: 1024px) 50vw, 100vw"
+          width="640"
+          height="420"
+          alt="Интерфейс панели аналитики релизов Shipline"
+          decoding="async"
+          fetchpriority="high"
+        >
+      </picture>
+    </div>
+
+  </div>
+</section>

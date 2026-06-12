@@ -1,0 +1,42 @@
+<!doctype html>
+<html class="page" lang="ru">
+  <include src="shared/head/index-404.html"></include>
+
+  <body class="flex min-h-dvh flex-col bg-surface-page" data-page="404">
+    <include src="shared/layout/skip-link.html"></include>
+    <include src="shared/layout/header.html"></include>
+
+    <main id="main" class="flex flex-1 items-center justify-center px-md py-5xl sm:px-xl lg:px-5xl" tabindex="-1" data-page-content>
+      <div class="mx-auto w-full max-w-screen-sm text-center">
+        <picture>
+          <source srcset="images/404/404.avif 1x, images/404/404@2x.avif 2x" type="image/avif">
+          <source srcset="images/404/404.webp 1x, images/404/404@2x.webp 2x" type="image/webp">
+          <img
+            class="mx-auto block w-full"
+            src="images/404/404.png"
+            srcset="images/404/404.png 1x, images/404/404@2x.png 2x"
+            width="724"
+            height="543"
+            alt="404"
+            decoding="async"
+            fetchpriority="high"
+          >
+        </picture>
+
+        <h1 class="mt-xl font-sans text-mobile-h2 text-text-primary sm:mt-2xl lg:text-h2">Страница не найдена</h1>
+
+        <p class="mx-auto mt-md text-mobile-body text-text-secondary sm:mt-lg">
+          Похоже, вы попали не туда. Страница, которую вы ищете, не существует или была перемещена.
+        </p>
+
+        <div class="mt-2xl flex flex-col items-stretch gap-md sm:mt-3xl sm:flex-row sm:items-center sm:justify-center">
+          <a class="btn btn--primary" href="index.html">На главную</a>
+          <a class="btn btn--outline" href="index.html#features">Смотреть возможности</a>
+        </div>
+      </div>
+    </main>
+
+    <include src="shared/layout/footer.html"></include>
+    <include src="shared/modals/demo-modal.html"></include>
+  </body>
+</html>

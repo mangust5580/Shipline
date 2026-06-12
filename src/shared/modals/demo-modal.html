@@ -1,0 +1,202 @@
+<div
+  class="demo-modal"
+  id="demo-modal"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="demo-modal-title"
+  hidden
+  data-demo-modal
+  data-state="closed"
+>
+  <div class="demo-modal__backdrop" data-demo-backdrop aria-hidden="true"></div>
+
+  <div class="demo-modal__panel max-w-screen-sm" tabindex="-1">
+
+    <div data-demo-form-view>
+      <div class="mb-2xl flex items-start justify-between gap-md">
+        <div>
+          <h2 id="demo-modal-title" class="font-sans text-mobile-h4 text-text-primary lg:text-h5">
+            Запросить демо
+          </h2>
+          <p class="mt-2xs text-small text-text-secondary">
+            Расскажите о вашей команде — мы свяжемся в течение 24 часов.
+          </p>
+        </div>
+        <button class="demo-modal__close-btn" type="button" aria-label="Закрыть" data-demo-close>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+            <use href="icons/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+
+      <form data-demo-form novalidate>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-lg">
+
+          <div class="flex flex-col gap-2xs">
+            <label class="demo-modal__label" for="demo-name">
+              Имя <span class="text-text-brand" aria-hidden="true">*</span>
+            </label>
+            <input
+              class="demo-modal__input"
+              type="text"
+              id="demo-name"
+              name="name"
+              placeholder="Иван Иванов"
+              required
+              autocomplete="name"
+              aria-describedby="demo-name-error"
+            >
+            <p id="demo-name-error" class="demo-modal__error" hidden role="alert"></p>
+          </div>
+
+          <div class="flex flex-col gap-2xs">
+            <label class="demo-modal__label" for="demo-email">
+              Рабочий Email <span class="text-text-brand" aria-hidden="true">*</span>
+            </label>
+            <input
+              class="demo-modal__input"
+              type="email"
+              id="demo-email"
+              name="email"
+              placeholder="ivan@company.ru"
+              required
+              autocomplete="email"
+              aria-describedby="demo-email-error"
+            >
+            <p id="demo-email-error" class="demo-modal__error" hidden role="alert"></p>
+          </div>
+
+          <div class="flex flex-col gap-2xs">
+            <label class="demo-modal__label" for="demo-company">
+              Компания
+            </label>
+            <input
+              class="demo-modal__input"
+              type="text"
+              id="demo-company"
+              name="company"
+              placeholder="Название вашей компании"
+              autocomplete="organization"
+              aria-describedby="demo-company-error"
+            >
+            <p id="demo-company-error" class="demo-modal__error" hidden role="alert"></p>
+          </div>
+
+          <div class="flex flex-col gap-2xs">
+            <label class="demo-modal__label" for="demo-phone">
+              Телефон
+            </label>
+            <input
+              class="demo-modal__input"
+              type="tel"
+              id="demo-phone"
+              name="phone"
+              placeholder="+7 (999) 999-99-99"
+              autocomplete="tel"
+              inputmode="tel"
+              data-mask="phone"
+              aria-describedby="demo-phone-error"
+            >
+            <p id="demo-phone-error" class="demo-modal__error" hidden role="alert"></p>
+          </div>
+
+          <div class="flex flex-col gap-2xs sm:col-span-2">
+            <label class="demo-modal__label" for="demo-role">
+              Ваша роль <span class="text-text-brand" aria-hidden="true">*</span>
+            </label>
+            <div class="demo-modal__select-wrapper">
+              <select
+                class="demo-modal__input demo-modal__select"
+                id="demo-role"
+                name="role"
+                aria-describedby="demo-role-error"
+              >
+                <option value="" disabled selected hidden>Выберите роль</option>
+                <option value="cto">CTO / VP Engineering</option>
+                <option value="em">Engineering Manager</option>
+                <option value="tl">Tech Lead</option>
+                <option value="dev">Developer</option>
+                <option value="pm">Product Manager</option>
+                <option value="other">Другое</option>
+              </select>
+              <svg class="demo-modal__select-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+                <use href="icons/sprite.svg#icon-chevron"></use>
+              </svg>
+            </div>
+            <p id="demo-role-error" class="demo-modal__error" hidden role="alert"></p>
+          </div>
+
+          <div class="flex flex-col gap-2xs sm:col-span-2">
+            <label class="demo-modal__label" for="demo-message">
+              Сообщение
+            </label>
+            <textarea
+              class="demo-modal__input demo-modal__textarea"
+              id="demo-message"
+              name="message"
+              placeholder="Расскажите о вашем релизном процессе..."
+              rows="3"
+              aria-describedby="demo-message-error"
+            ></textarea>
+            <p id="demo-message-error" class="demo-modal__error" hidden role="alert"></p>
+          </div>
+
+          <div class="flex flex-col gap-2xs sm:col-span-2">
+            <div class="demo-modal__consent">
+              <input
+                class="demo-modal__checkbox"
+                type="checkbox"
+                id="demo-consent"
+                name="consent"
+                required
+                aria-describedby="demo-consent-error"
+              >
+              <label class="demo-modal__consent-label" for="demo-consent">
+                Я согласен с <a class="demo-modal__consent-link" href="privacy.html">политикой конфиденциальности</a> и обработкой данных.
+              </label>
+            </div>
+            <p id="demo-consent-error" class="demo-modal__error" hidden role="alert"></p>
+          </div>
+
+        </div>
+
+        <button class="btn btn--primary mt-2xl w-full" type="submit">
+          <span>Отправить заявку</span>
+        </button>
+      </form>
+    </div>
+
+    <div hidden data-demo-success>
+      <div class="mb-2xl flex items-start justify-end">
+        <button class="demo-modal__close-btn" type="button" aria-label="Закрыть" data-demo-close>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+            <use href="icons/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="flex flex-col items-center gap-lg py-xl text-center">
+        <div class="flex h-4xl w-4xl items-center justify-center rounded-full border border-border-inverse bg-surface-elevated">
+          <svg class="h-2xl w-2xl text-text-success" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+            <use href="icons/sprite.svg#icon-check-bold"></use>
+          </svg>
+        </div>
+        <div class="flex flex-col gap-xs">
+          <h2 class="font-sans text-mobile-h4 text-text-primary lg:text-h5">
+            Заявка отправлена!
+          </h2>
+          <p class="text-mobile-body text-text-secondary">
+            Мы получили вашу заявку и свяжемся с вами в течение 24 часов.
+          </p>
+        </div>
+        <p class="text-small text-text-muted">
+          Это демо-страница — форма работает без подключения к серверу.
+        </p>
+        <button class="btn btn--outline mt-md" type="button" data-demo-close>
+          Закрыть
+        </button>
+      </div>
+    </div>
+
+  </div>
+</div>
