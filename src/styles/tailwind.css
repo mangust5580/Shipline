@@ -1,6 +1,18 @@
 @import "tailwindcss";
 @import "./tokens.css";
-@import "./components.css";
+@import "./effects.css";
 @source "../pages/**/*.{html,js}";
 @source "../shared/**/*.{html,js}";
 @source "../scripts/**/*.{js,ts,jsx,tsx}";
+
+@utility bg-brand-action-vertical {
+  background-image: var(--gradient-brand-action-vertical);
+}
+
+@utility bg-brand-action-horizontal {
+  background-image: var(--gradient-brand-action-horizontal);
+}
+
+@utility bg-brand-glow {
+  background: var(--gradient-brand-glow);
+}

@@ -36,20 +36,20 @@
       </div>
 
       <div class="hidden justify-end lg:flex">
-        <button class="btn btn--primary" type="button" data-demo-trigger><span>Запросить демо</span></button>
+        <button class="inline-flex cursor-pointer select-none items-center justify-center gap-xs whitespace-nowrap rounded-md border border-transparent bg-brand-action-vertical px-xl py-sm font-sans text-button font-bold leading-5 text-text-on-brand shadow-button transition duration-200 ease-out motion-reduce:transition-none focus:outline-none focus-visible:bg-brand-action-horizontal focus-visible:shadow-focus hover:bg-brand-action-horizontal active:translate-y-3xs" type="button" data-demo-trigger><span>Запросить демо</span></button>
       </div>
 
       <button
-        class="header-burger inline-flex flex-col items-center justify-center gap-2xs text-text-brand hover:bg-surface-brand-soft focus:outline-none focus-visible:shadow-focus active:bg-violet-alpha-12 aria-expanded:bg-surface-brand-soft lg:hidden"
+        class="inline-flex h-3xl w-3xl flex-col items-center justify-center gap-2xs rounded-md border-0 bg-transparent p-0 cursor-pointer text-text-brand transition duration-200 ease-out motion-reduce:transition-none hover:bg-surface-brand-soft focus:outline-none focus-visible:shadow-focus active:bg-violet-alpha-12 aria-expanded:bg-surface-brand-soft lg:hidden"
         type="button"
         aria-label="Открыть меню"
         aria-controls="header-mobile-menu"
         aria-expanded="false"
         data-header-toggle
       >
-        <span class="header-burger__line" aria-hidden="true"></span>
-        <span class="header-burger__line" aria-hidden="true"></span>
-        <span class="header-burger__line" aria-hidden="true"></span>
+        <span class="block h-3xs w-lg rounded-full bg-current transition duration-200 ease-out motion-reduce:transition-none" data-burger-line aria-hidden="true"></span>
+        <span class="block h-3xs w-lg rounded-full bg-current transition duration-200 ease-out motion-reduce:transition-none" data-burger-line aria-hidden="true"></span>
+        <span class="block h-3xs w-lg rounded-full bg-current transition duration-200 ease-out motion-reduce:transition-none" data-burger-line aria-hidden="true"></span>
       </button>
     </div>
   </nav>
@@ -61,7 +61,7 @@
     data-header-menu
     data-state="closed"
   >
-    <nav class="header-mobile-menu__nav flex flex-col items-center justify-center gap-xl text-center" aria-label="Мобильная навигация">
+    <nav class="flex flex-col items-center justify-center gap-xl text-center" aria-label="Мобильная навигация">
       <a class="rounded-md px-md py-xs text-mobile-h5 text-text-secondary transition-colors duration-200 ease-out hover:text-text-primary focus:outline-none focus-visible:shadow-focus active:text-text-brand" data-nav-link href="index.html#features" data-header-link>
         Функции
       </a>
@@ -78,7 +78,7 @@
         FAQ
       </a>
       <div class="pt-md">
-        <button class="btn btn--primary" type="button" data-demo-trigger data-header-link><span>Запросить демо</span></button>
+        <button class="inline-flex cursor-pointer select-none items-center justify-center gap-xs whitespace-nowrap rounded-md border border-transparent bg-brand-action-vertical px-xl py-sm font-sans text-button font-bold leading-5 text-text-on-brand shadow-button transition duration-200 ease-out motion-reduce:transition-none focus:outline-none focus-visible:bg-brand-action-horizontal focus-visible:shadow-focus hover:bg-brand-action-horizontal active:translate-y-3xs" type="button" data-demo-trigger data-header-link><span>Запросить демо</span></button>
       </div>
     </nav>
   </div>

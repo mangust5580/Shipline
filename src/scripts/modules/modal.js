@@ -4,7 +4,7 @@ const SELECTORS = {
   trigger: '[data-demo-trigger]',
   modal: '[data-demo-modal]',
   backdrop: '[data-demo-backdrop]',
-  panel: '.demo-modal__panel',
+  panel: '[data-demo-panel]',
   close: '[data-demo-close]',
   form: '[data-demo-form]',
   formView: '[data-demo-form-view]',

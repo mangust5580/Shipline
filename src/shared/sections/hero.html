@@ -5,7 +5,7 @@
 
     <div class="flex min-w-0 flex-col items-start gap-lg lg:col-span-6 lg:max-w-none xl:col-span-5">
 
-      <include src="shared/components/badges/badge-brand-analytics.html"></include>
+      <span class="inline-flex items-center justify-center rounded-full border px-sm py-3xs font-sans text-label whitespace-nowrap bg-violet-500/10 border-violet-500/24 text-violet-500">Аналитика релизов и изменений</span>
 
       <div class="flex w-full flex-col gap-md">
         <h1 id="hero-title" class="max-w-screen-md font-sans text-mobile-h2 text-text-primary sm:text-mobile-h1 2xl:text-h2">
@@ -20,8 +20,12 @@
       </div>
 
       <div class="flex flex-col gap-sm sm:flex-row sm:items-center">
-        <include src="shared/components/buttons/button-primary.html"></include>
-        <include src="shared/components/buttons/button-outline-features.html"></include>
+        <button class="inline-flex cursor-pointer select-none items-center justify-center gap-xs whitespace-nowrap rounded-md border border-transparent bg-brand-action-vertical px-xl py-sm font-sans text-button font-bold leading-5 text-text-on-brand shadow-button transition duration-200 ease-out motion-reduce:transition-none focus:outline-none focus-visible:bg-brand-action-horizontal focus-visible:shadow-focus hover:bg-brand-action-horizontal active:translate-y-3xs disabled:cursor-not-allowed disabled:shadow-none" type="button" data-demo-trigger>
+          <span>Запросить демо</span>
+        </button>
+        <a class="inline-flex cursor-pointer select-none items-center justify-center gap-xs whitespace-nowrap rounded-md border border-border-brand bg-transparent px-xl py-sm font-sans text-button font-bold leading-5 text-violet-300 transition duration-200 ease-out motion-reduce:transition-none focus:outline-none focus-visible:shadow-focus hover:bg-violet-alpha-12 active:translate-y-3xs active:bg-violet-alpha-16" href="#features">
+          <span>Смотреть возможности</span>
+        </a>
       </div>
 
       <ul

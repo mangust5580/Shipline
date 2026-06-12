@@ -250,6 +250,10 @@
   --radius-xl: 24px;
   --radius-2xl: 32px;
   --radius-full: 999px;
+
+  /* Z-index */
+  --z-1: 1;
+  --z-60: 60;
 }
 /* stylelint-enable color-hex-length, scss/at-rule-no-unknown, custom-property-empty-line-before, value-keyword-case */
 

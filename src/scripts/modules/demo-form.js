@@ -67,7 +67,6 @@ export default class DemoForm {
     this.onChange = this.onChange.bind(this)
     this.onReset = this.onReset.bind(this)
     this.onPhoneKeyDown = this.onPhoneKeyDown.bind(this)
-    this.onPhonePaste = this.onPhonePaste.bind(this)
   }
 
   init() {
@@ -85,7 +84,6 @@ export default class DemoForm {
     const phone = this.form.querySelector('[data-mask="phone"]')
     if (phone) {
       phone.addEventListener('keydown', this.onPhoneKeyDown)
-      phone.addEventListener('paste', this.onPhonePaste)
     }
 
     this.isInitialized = true
@@ -103,7 +101,6 @@ export default class DemoForm {
     const phone = this.form.querySelector('[data-mask="phone"]')
     if (phone) {
       phone.removeEventListener('keydown', this.onPhoneKeyDown)
-      phone.removeEventListener('paste', this.onPhonePaste)
     }
 
     this.form = null
@@ -197,7 +194,7 @@ export default class DemoForm {
       if (!el.name) continue
       el.removeAttribute('aria-invalid')
     }
-    this.form.querySelectorAll('.demo-modal__error').forEach(el => {
+    this.form.querySelectorAll('[data-demo-error]').forEach(el => {
       el.hidden = true
       el.textContent = ''
     })
@@ -225,12 +222,4 @@ export default class DemoForm {
     }
   }
 
-  onPhonePaste(event) {
-    event.preventDefault()
-    const text = event.clipboardData?.getData('text') ?? ''
-    const el = event.target
-    el.value = formatPhone(toNationalDigits(text))
-    el.setSelectionRange(el.value.length, el.value.length)
-    if (this.submitted) this.checkField(el)
-  }
 }
