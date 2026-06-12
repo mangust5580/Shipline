@@ -1,90 +1,87 @@
-# Shipline
+# Shipline [![Deploy GitHub Pages](https://github.com/mangust5580/Shipline/actions/workflows/deploy.yml/badge.svg)](https://github.com/mangust5580/Shipline/actions/workflows/deploy.yml) [![License](https://img.shields.io/github/license/mangust5580/Shipline)](LICENSE) [![Node.js](https://img.shields.io/badge/node-%3E%3D20-339933?logo=node.js\&logoColor=white)](package.json) [![Live demo](https://img.shields.io/badge/live-demo-2ea44f)](https://mangust5580.github.io/Shipline/)
 
-[![Deploy GitHub Pages](https://github.com/mangust5580/Shipline/actions/workflows/deploy.yml/badge.svg)](https://github.com/mangust5580/Shipline/actions/workflows/deploy.yml)
-[![License](https://img.shields.io/github/license/mangust5580/Shipline)](LICENSE)
-[![Node](https://img.shields.io/badge/node-%3E%3D20-339933?logo=node.js&logoColor=white)](https://nodejs.org/)
-[![Live Demo](https://img.shields.io/badge/live-demo-2ea44f)](https://mangust5580.github.io/Shipline/)
+Shipline — портфолио-проект в формате многостраничного SaaS-сайта для вымышленной платформы аналитики релизов, изменений и delivery-метрик.
 
-Портфолио-проект в формате SaaS landing page для вымышленной платформы аналитики релизов, изменений и delivery-метрик.
+Проект сделан как витринная работа: он показывает семантическую HTML-разметку, Tailwind CSS v4, дизайн-токены, адаптивные изображения, модальные сценарии, базовую доступность, SEO-метаданные и production-oriented сборку статического сайта.
 
-> **Демонстрационный проект.** Весь контент, контакты, юридические страницы и сценарии формы являются вымышленными. Форма не отправляет и не сохраняет реальные данные — backend и сторонние form-сервисы не используются. Реальных клиентских данных, NDA-материалов и production-бизнес-информации в проекте нет.
-
----
+Контент, контакты, юридические страницы и сценарии формы являются демонстрационными. Форма не отправляет и не сохраняет реальные данные: backend и сторонний form service не используются. Реальных клиентских данных, NDA-материалов и production-бизнес-информации в проекте нет.
 
 ## Состав проекта
 
-- Главная страница: Hero, Features, Workflow, Audience, Pricing, FAQ, Contact CTA.
-- Страница политики конфиденциальности.
-- Страница условий использования.
-- Кастомная 404-страница для GitHub Pages.
-- Демо-модалка заявки с валидацией.
-- Адаптивная вёрстка от 320px до 1920px.
-- GitHub Pages деплой через GitHub Actions.
-
----
+* Главная страница с hero-блоком, ключевыми функциями, workflow, аудиториями, тарифами, FAQ и контактным CTA.
+* Страница политики конфиденциальности.
+* Страница условий использования.
+* Кастомная страница 404 для GitHub Pages.
+* Демо-модалка заявки с валидацией формы.
+* Адаптивная вёрстка от 320px.
+* Подготовка к публикации на GitHub Pages через GitHub Actions.
 
 ## Quality checks
 
-- `npm run build` — passes.
-- `npm run lint` — passes (ESLint + Stylelint, 0 errors).
-- `npm run check` — passes (lint + full build).
-- Final GitHub Pages readiness audit: passed.
-
----
+* Lighthouse: Performance 100, Accessibility 100, Best Practices 100, SEO 100.
+* `npm run build` passes.
+* `npm run lint` passes.
+* `npm run check` passes.
 
 ## Сборка
 
-Gulp pipeline обрабатывает HTML-партиалы (PostHTML), Tailwind CSS v4, JavaScript ES-модули, изображения AVIF/WebP/PNG @2x, SVG sprite, favicons, sitemap и robots.txt.
+Проект использует кастомную Gulp 5 сборку для статического сайта.
 
-Production output: `public/`
+Сборка обрабатывает HTML-шаблоны, Tailwind CSS v4, JavaScript-модули, изображения, SVG-иконки, favicon, sitemap, robots.txt и production-артефакты для GitHub Pages.
+
+Production output: `public/`.
 
 GitHub Actions workflow собирает проект и деплоит `public/` на GitHub Pages.
 
----
-
 ## Стек
 
-- HTML-партиалы с includes / PostHTML
-- Tailwind CSS v4 — CSS-first, без `tailwind.config.js`
-- CSS custom properties — design tokens в `src/styles/tokens.css`
-- Vanilla JavaScript ES-модули
-- Gulp 5 pipeline
-- SVG sprite для UI-иконок
-- Responsive image pipeline: AVIF / WebP / PNG, @2x assets
-- Manrope variable font
-- ESLint, Stylelint, Prettier
-- GitHub Actions + GitHub Pages
-
----
+* HTML-шаблоны с includes / PostHTML partials.
+* Tailwind CSS v4 в CSS-first режиме, без `tailwind.config.js`.
+* CSS custom properties для дизайн-токенов.
+* Tailwind utilities в HTML для presentation layer.
+* Vanilla JavaScript ES-модули.
+* Gulp 5 pipeline.
+* Оптимизация изображений и генерация responsive AVIF / WebP / PNG.
+* Оптимизация SVG и генерация SVG-спрайта.
+* Manrope variable font.
+* ESLint, Stylelint, Prettier.
+* GitHub Actions и GitHub Pages.
 
 ## Требования
 
-- Node.js >= 20
-- npm
-
----
+Node.js `>=20`.
 
 ## Команды
 
 ```bash
-npm ci                # установить зависимости
-
-npm run dev           # дев-сервер с watch
-npm run build         # production build → public/
-npm run build:fast    # быстрая сборка без полного image pipeline
-npm run lint          # ESLint + Stylelint
-npm run check         # lint + production build
-npm run preview       # preview production build
+npm ci
+npm run dev
+npm run build
+npm run build:fast
+npm run lint
+npm run check
+npm run preview
 ```
 
----
+`npm run dev` запускает dev-сервер в watch-режиме.
+`npm run build` создаёт production-сборку в `public/`.
+`npm run build:fast` запускает быструю сборку без полного image pipeline.
+`npm run lint` запускает ESLint и Stylelint.
+`npm run check` запускает линтеры и полную production-сборку.
+`npm run preview` локально поднимает production-сборку.
 
 ## Публикация
 
-| | |
-|---|---|
-| Репозиторий | https://github.com/mangust5580/Shipline |
-| Live Demo | https://mangust5580.github.io/Shipline/ |
-| Workflow | `.github/workflows/deploy.yml` |
-| Publish directory | `public/` |
-| GitHub Pages source | GitHub Actions |
+Проект подготовлен для публикации на GitHub Pages.
+
+| Параметр            | Значение                                  |
+| ------------------- | ----------------------------------------- |
+| Репозиторий         | `https://github.com/mangust5580/Shipline` |
+| Live demo           | `https://mangust5580.github.io/Shipline/` |
+| Workflow            | `.github/workflows/deploy.yml`            |
+| Publish directory   | `public/`                                 |
+| GitHub Pages source | GitHub Actions                            |
+
+## Production
+
+Проект готов для статического хостинга на GitHub Pages. Для реального коммерческого продукта нужно заменить демо-контакты, юридический текст и обработку формы на production-данные и backend-интеграцию.
